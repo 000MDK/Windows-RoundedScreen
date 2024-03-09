@@ -14,6 +14,8 @@ namespace RoundedScreen
         public const int GWL_EXSTYLE = (-20);
         public const int WS_EX_TOOLWINDOW = 0x00000080;
 
+
+
         [DllImport("user32.dll")]
         public static extern int GetWindowLong(IntPtr hwnd, int index);
 
