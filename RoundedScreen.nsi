@@ -1,7 +1,7 @@
 !define APP_NAME "RoundedScreen"
 !define COMP_NAME "RoundedScreen"
 !define WEB_SITE "https://github.com/BeezBeez/Windows-RoundedScreen"
-!define VERSION "03.00.00.00"
+!define VERSION "04.00.00.00"
 !define COPYRIGHT "Copyright  © 2025"
 !define DESCRIPTION "RoundedScreen"
 !define INSTALLER_NAME "C:\Users\user\Desktop\Output\RoundedScreen\setup.exe"
