@@ -1,10 +1,11 @@
 !define APP_NAME "RoundedScreen"
 !define COMP_NAME "RoundedScreen"
 !define WEB_SITE "https://github.com/BeezBeez/Windows-RoundedScreen"
-!define VERSION "03.00.00.00"
-!define COPYRIGHT "Copyright  © 2025"
+!define VERSION "04.00.00.00"
+!define COPYRIGHT "Copyright  Â© 2025"
+!define SHORTVERSIONNUM "4.0"
 !define DESCRIPTION "RoundedScreen"
-!define INSTALLER_NAME "C:\Users\user\Desktop\Output\RoundedScreen\setup.exe"
+!define INSTALLER_NAME "C:\Users\user\Desktop\Windows-RoundedScreen-master\RoundedScreen\bin\Release\${APP_NAME}.${SHORTVERSIONNUM}.Installer.exe"
 !define MAIN_APP_EXE "RoundedScreen.exe"
 !define INSTALL_TYPE "SetShellVarContext all"
 !define REG_ROOT "HKLM"
@@ -153,8 +154,8 @@ RmDir "$SMPROGRAMS\RoundedScreen"
 !endif
 
 DeleteRegKey ${REG_ROOT} "${REG_APP_PATH}"
+DeleteRegValue HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "RoundedScreen"
 DeleteRegKey ${REG_ROOT} "${UNINSTALL_PATH}"
 SectionEnd
 
 ######################################################################
-
